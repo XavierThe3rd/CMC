@@ -1,0 +1,121 @@
+footer{
+    background: $lightGrey;
+
+    .types{
+        background: $pureWhite;
+        height: 0px;
+        position: absolute;
+        overflow-y: scroll;
+    }
+
+    h3{
+        @include fontSettings($textGrey, 32px, 200, 1.5, 50px 0 10px);
+    }
+
+    ul{
+        margin: 0;
+        li{
+            margin: 0 0 10px;
+            a{
+                @include fontSettings($textGrey, 16px, 400, 1.5, 0);
+
+                &:hover{
+                    color: $lightBlue
+                }
+            }
+        }
+    }
+
+    .line{
+        @include border($primeGreen, 1px 0 0 0); 
+        margin: 10px 0;
+
+        p{
+            @include fontSettings($textGrey, 14px, 400, 1.5, 20px 0);
+            text-align: center;
+        }
+    }
+    @media(min-width: 768px){
+        div{
+            &:nth-child(2){
+                width:60%;
+                margin: 0 20px;
+            }
+        }
+
+        h3{
+            @include fontSettings($textGrey, 42px, 200, 1.5, 150px 0 20px);
+        }
+        ul{
+            li{
+                margin: 0 0 30px;
+                a{
+                    @include fontSettings($textGrey, 22px, 400, 1.5, 0);
+                }
+            }
+        }
+        .line{
+            @include border($primeGreen, 2px 0 0 0); 
+            margin: 10px 0;
+    
+            p{
+                @include fontSettings($textGrey, 24px, 400, 1.5, 30px 0);
+            }
+        }
+    }
+
+    @media(min-width: 1024px){
+
+        h3{
+            @include fontSettings($textGrey, 52px, 200, 1.5, 200px 0 40px);
+        }
+        ul{
+            li{
+                a{
+                    @include fontSettings($textGrey, 24px, 400, 1.5, 0);
+                }
+            }
+        }
+        .line{
+            @include border($primeGreen, 3px 0 0 0); 
+            margin: 20px 0 0;
+    
+            p{
+                @include fontSettings($textGrey, 28px, 400, 1.5, 30px 0);
+            }
+        }
+    }
+}
+
+.up-foot{
+    transform: translateY(-95px);
+    transition: 0.35s linear;
+    div{
+        opacity: 0;
+        transition: 0.35s linear;
+    }
+    .types{
+        height: 353px;
+        opacity: 1;
+        transition: 0.35s linear 0.35s;
+
+        @media(min-width: 768px){
+            height: 600px;
+        }
+    }
+}
+
+.down-foot{
+    transform: translateY(0);
+    transition: 0.35s linear 0.35s;
+
+    div{
+        opacity: 1;
+        transition: 0.35s linear 0.35s;
+    }
+
+    .types{
+        height: 0px;
+        transition: 0.35s linear;
+    }
+}

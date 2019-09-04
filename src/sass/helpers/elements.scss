@@ -1,0 +1,28 @@
+h1 ,h2, h3, h4, p, a{
+    font-family: Aproxima-nova, "Catamaran", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
+    z-index: 2;
+}
+
+ul{
+    padding: 0;
+}
+
+li, input{
+    list-style: none;
+    border: none;
+    outline: none;
+}
+
+
+span {
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    outline: none;
+    border: none;
+}

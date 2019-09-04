@@ -1,0 +1,20 @@
+main{
+    top:240px;
+
+    @media(min-width: 768px){
+        top: 370px;
+    }
+
+    @media(min-width: 1024px){
+        top: 530px;
+    }
+}
+
+
+
+
+
+
+
+
+

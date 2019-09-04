@@ -1,0 +1,85 @@
+.section3{
+    @include dimensions($primeGreen, 100%, inherit, 0, -50px 0 0);
+    box-shadow: 0 0 12px 0px #535353;
+
+    h1{
+        @include fontSettings($pureWhite, 20px, 500, 1, 160px 0 0px);
+    }
+
+    h2{
+        @include fontSettings($pureWhite, 38px, 600, 1, 10px 0 10px);
+    }
+    p{
+        @include fontSettings($pureWhite, 18px, 300, 1.5, 10px 0);
+    }
+      
+    input[type=text] {
+        @include fontSettings($pureBlack, 18px, 300, 1, 0 0 0 5px); 
+        @include dimensions($pureWhite, 86%, 30px, 5px, 0);
+    }
+
+    .search-bar button {
+        @include dimensions($pureWhite, 40px, 40px, 20px, auto 0 auto 5px);
+        @include fontSettings($textGrey, 18px, 300, 1, auto 0 auto 5px);
+        @include border($aquaBlue, 2px);
+    
+        &:hover{
+            background: $lightBlue;
+            border-color: $pureWhite;
+        }
+        i{
+            margin:0 -16px;
+            font-size: 32px;
+            color: $aquaBlue;
+
+            &:hover{
+                color: $pureWhite;
+            }
+        }
+    }
+
+    form{
+        margin: 10px 0 110px;
+    }
+
+    @media(min-width: 768px){
+        .search-hold{
+            width: 60%;
+        }
+
+        h1{
+            @include fontSettings($pureWhite, 26px, 500, 1, 160px 0 0px);
+        }
+    
+        h2{
+            @include fontSettings($pureWhite, 50px, 600, 1, 10px 0 10px);
+        }
+
+        input[type=text] {
+            @include fontSettings($pureBlack, 22px, 300, 1, 0 0 0 5px); 
+            @include dimensions($pureWhite, 86%, 42px, 5px, 0);
+        }
+    
+        .search-bar button {
+            @include dimensions($pureWhite, 48px, 48px, 24px, auto 0 auto 10px);
+        
+            &:hover{
+                background: $lightBlue
+            }
+            i{
+                margin:0 -13px;
+                font-size: 36px;
+            }
+        }    
+    }
+
+    @media(min-width: 1024px){
+        h1{
+            @include fontSettings($pureWhite, 34px, 500, 1, 240px 0 0px);
+        }
+    
+        h2{
+            @include fontSettings($pureWhite, 62px, 600, 1, 10px 0 10px);
+        }
+    }
+}

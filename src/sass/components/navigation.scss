@@ -1,0 +1,154 @@
+.to-visible{
+    opacity:1;
+}
+
+.fade-in{
+    opacity:1;
+}
+
+
+.fade-out{
+    opacity: 0;
+}
+
+section{
+    background: $darkGreen;
+    height: 55px;
+    top: 220px;
+    z-index: 5;
+    box-shadow: 1px 0 3px 1px $darkGrey;
+
+    h1{
+        @include fontSettings($pureWhite, 18px, 500, 1, 10px);
+        transition: all 0.15s ease-out;
+    }
+
+    h2{
+        @include fontSettings($pureWhite, 22px, 500, 1, -40px 15px);
+        transition: all 0.15s linear;
+        z-index:2;
+    }
+
+    nav{
+        background: $aquaBlue;
+        z-index:3;
+
+        ul{
+            padding:0px 25px 0 50px;
+
+            li{
+                width:130px;
+
+                &:nth-child(1){
+                    left: 20%;
+                }
+
+                &:nth-child(2){
+                    right: 6%;
+                }
+
+                a{
+                    @include fontSettings($pureWhite, 18px, 500, 1, 0);
+                    position:absolute;
+
+                    &:hover{
+                        color: $lightBlue
+                    }
+                }
+            }
+        }
+    }
+
+    button{
+        transition: all 0.15s linear;
+        padding: 0 6px;
+        z-index: 5;
+        
+        .barhold{
+            margin: auto 13px;
+            span {
+                @include dimensions($pureWhite, 32px, 5px, 2.5px, 4px -6.5px);
+                transition: all 0.15s linear;
+            }
+        }
+    }
+
+    @media(min-width: 768px){
+        height: 72px;
+
+        h1{
+            @include fontSettings($pureWhite, 24px, 500, 1, 22px);
+        }  
+        h2{
+            font-size: 36px;
+            margin: -50px 15px;
+        }   
+
+        nav {
+            height: 72px;
+
+            ul{
+            margin: 24px 0;
+
+                li{
+                    width: 175px;
+
+                    &:nth-child(2){
+                        right: 18%;
+                    }
+
+                    a{
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+        
+        button .barhold{
+            margin: auto 24px;
+
+            span {
+                @include dimensions($pureWhite, 50px, 10px, 5px, 6px -6.5px);
+                transition: all 0.15s linear;
+            }
+        }
+    }
+
+    @media(min-width: 1024px){
+        height: 86px;
+
+        h1{
+            @include fontSettings($pureWhite, 32px, 500, 1, 28px);
+        }  
+        h2{
+            font-size: 42px;
+            margin: -66px 15px;
+        }   
+
+        nav ul li{
+            width: 200px;
+            
+            &:nth-child(2){
+                right: 18%;
+            }
+
+            a{
+                font-size: 30px;
+            }
+        }
+        
+        button .barhold{
+            margin: auto 24px;
+
+            &:hover > span{
+                background: $lightBlue
+            }
+
+            span {
+                @include dimensions($pureWhite, 60px, 10px, 5px, 7px -6.5px);
+                transition: all 0.15s linear;
+            }
+        }
+    }
+}
+

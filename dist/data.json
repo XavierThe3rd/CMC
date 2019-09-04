@@ -1,0 +1,47 @@
+{
+    "images": {
+        "LogoPrime": "http://clearmarketchoice.com/Logo.png",
+        "ShieldSeal": "https://vignette.wikia.nocookie.net/cmc-graphics-beta/images/2/26/ShieldSeal.svg/revision/latest?cb=20190831160633",
+        "VerifyPicto": "https://vignette.wikia.nocookie.net/cmc-graphics-beta/images/0/0a/VerificationPicto.svg/revision/latest?cb=20190831160656",
+        "ValidPicto": "https://vignette.wikia.nocookie.net/cmc-graphics-beta/images/a/a5/ValidationPicto.svg/revision/latest?cb=20190831160723",
+        "VaultPicto": "https://vignette.wikia.nocookie.net/cmc-graphics-beta/images/6/68/VaultPicto.svg/revision/latest?cb=20190831160609",
+        "QrPicto": "https://vignette.wikia.nocookie.net/cmc-graphics-beta/images/f/f3/QRpicto.svg/revision/latest?cb=20190831160539"
+    },
+
+    "refTags": {
+        "vaultRef": "http://clearmarketchoice.com/PhotoIDVault/",
+        "vaultText": "• Vault Login •",
+        "kioskRef": "http://clearmarketchoice.com/Kiosk/",
+        "kioskText": "• Kiosk Login •",
+        "contactRefA": "#",
+        "contactTextA": "support@clearmarketchoice.com",
+        "contactRefB": "#",
+        "contactTextB": "www.clearmarketchoice.com"
+    },
+
+    "infoText": {
+        "HeadingA": "Providing real-time license validation of cannibis retailers.",
+        "HeadingB": "ClearMarketChoice",
+        "HeadingC": "Our Mission",
+        "PspanA": "• Combat the cannabis black market",
+        "PspanB": "• Provide the cannabis community a symbol of trust",
+        "PspanC": "• Expand to every legalized cannabis state",
+        "HeadingD": "Our Services"
+    },
+
+    "Services":{
+       "HeadingA": "Dispensery Validation",
+       "ParaA": "We provide real-time status of your cannabis retail license. Activate your retailer account by searching for your retailer license number and viewing your retailer information.",
+       "HeadingB": "Customer Pre-Verification",
+       "ParaB": "Receive unlimited access to our Customer Pre-Verification tools to view information of a customer whenever they place an order online or by text message.",
+       "HeadingC": "Customer Photo ID Vault",
+       "ParaC": "We provide a way for your customers to securely upload and store their state photo ID in our vault by using our powerful image tokenization process.",
+       "HeadingD": "QR Code Status",
+       "ParaD": "Receive (12) custom QR code window / windshield clings that can be scanned to provide customers the real-time status of your cannabis retail license."
+    },
+
+    "Footer": {
+        "Heading": "Contact",
+        "CopyRight": "Copyright © 2019 MYN MARKETING LLC"
+    }
+}

@@ -1,10 +1,11 @@
 import {pic} from './genElms';
 
+var ulhead = pic.createUl("ulIdhead", "flex", "btw");
 var li1 = pic.createLitags(null, null, null);
 var li2 = pic.createLitags(null, null, null);
 var li3 = pic.createLitags("aId1", "flex", "abs");
 var li4 = pic.createLitags("aId2", "flex", "abs");
-var ulfoot = pic.createUl();
+var ulfoot = pic.createUl("ulIdfoot", null, null);
 var li5 = pic.createLitags(null, null, null);
 var li6 = pic.createLitags(null, null, null);
 
@@ -24,4 +25,4 @@ var pictoHold4 = pic.createServHolds("picto-hold", null, null);
 var fdivCont = pic.createServHolds("contact-hold", "auto", null);
 var fdivCopy = pic.createServHolds("line", "center", "grid10");
 
-export {li1, li2, li3, li4, li5, li6, ulfoot, servDiv1, sliIdiv1, pictoHold1, servDiv2, sliIdiv2, pictoHold2, servDiv3, sliIdiv3, pictoHold3, servDiv4, sliIdiv4, pictoHold4, fdivCont, fdivCopy};
+export {ulhead, li1, li2, li3, li4, li5, li6, ulfoot, servDiv1, sliIdiv1, pictoHold1, servDiv2, sliIdiv2, pictoHold2, servDiv3, sliIdiv3, pictoHold3, servDiv4, sliIdiv4, pictoHold4, fdivCont, fdivCopy};

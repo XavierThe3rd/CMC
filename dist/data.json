@@ -1,11 +1,11 @@
 {
     "images": {
-        "LogoPrime": "http://clearmarketchoice.com/Logo.png",
-        "ShieldSeal": "https://vignette.wikia.nocookie.net/cmc-graphics-beta/images/2/26/ShieldSeal.svg/revision/latest?cb=20190831160633",
-        "VerifyPicto": "https://vignette.wikia.nocookie.net/cmc-graphics-beta/images/0/0a/VerificationPicto.svg/revision/latest?cb=20190831160656",
-        "ValidPicto": "https://vignette.wikia.nocookie.net/cmc-graphics-beta/images/a/a5/ValidationPicto.svg/revision/latest?cb=20190831160723",
-        "VaultPicto": "https://vignette.wikia.nocookie.net/cmc-graphics-beta/images/6/68/VaultPicto.svg/revision/latest?cb=20190831160609",
-        "QrPicto": "https://vignette.wikia.nocookie.net/cmc-graphics-beta/images/f/f3/QRpicto.svg/revision/latest?cb=20190831160539"
+        "LogoPrime": "images/ClearMarketChoiceLogo.svg",
+        "ShieldSeal": "images/ShieldSeal.svg",
+        "VerifyPicto": "images/VerificationPicto.svg",
+        "ValidPicto": "images/ValidationPicto.svg",
+        "VaultPicto": "images/VaultPicto.svg",
+        "QrPicto": "images/QRpicto.svg"
     },
 
     "refTags": {

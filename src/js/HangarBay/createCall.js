@@ -8,6 +8,7 @@ import {pic} from './genElms';
  var atag5 = pic.createAtags();
  var atag6 = pic.createAtags();
 
+ var Logo = pic.createPics("logoPrime", "grid10", "auto");
  var Seal = pic.createPics(null, "seal", null);
  var infoH1 = pic.createH1tags("topText");
  var infoH2 = pic.createH2tags("bottomText", "opacity-none");
@@ -38,7 +39,7 @@ fetch('./data.json')
     return response.json()
 })
 .then(data => {
-    //Logo.setAttribute("data", data.images.LogoPrime);
+    Logo.setAttribute("data", data.images.LogoPrime);
 
     atag1.setAttribute("href", data.refTags.vaultRef);
     atag1.textContent = data.refTags.vaultText;
@@ -81,4 +82,4 @@ fetch('./data.json')
 });
 
 
-export {atag1, atag2, atag3, atag4, atag5, atag6, Seal, infoH1, infoH2, infoH3, infoP1, infoP2, infoP3, infoH4, servHA, servHB, servHC, servHD, servPA, servPB, servPC, servPD, pictoA, pictoB, pictoC, pictoD, footH, copyR};
+export {Logo, atag1, atag2, atag3, atag4, atag5, atag6, Seal, infoH1, infoH2, infoH3, infoP1, infoP2, infoP3, infoH4, servHA, servHB, servHC, servHD, servPA, servPB, servPC, servPD, pictoA, pictoB, pictoC, pictoD, footH, copyR};

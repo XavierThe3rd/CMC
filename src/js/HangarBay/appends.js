@@ -1,16 +1,19 @@
 import {pic} from "./genElms";
-import {li1, li2, li3, li4, li5, li6, ulfoot, servDiv1, sliIdiv1, pictoHold1, servDiv2, sliIdiv2, pictoHold2, servDiv3, sliIdiv3, pictoHold3, servDiv4, sliIdiv4, pictoHold4, fdivCont, fdivCopy} from './createHolders'
-import {atag1, atag2, atag3, atag4, atag5, atag6, Seal, infoH1, infoH2, infoH3, infoP1, infoP2, infoP3, infoH4, servHA, servHB, servHC, servHD, servPA, servPB, servPC, servPD, pictoA, pictoB, pictoC, pictoD, footH, copyR} from './createCall';
+import {ulhead, li1, li2, li3, li4, li5, li6, ulfoot, servDiv1, sliIdiv1, pictoHold1, servDiv2, sliIdiv2, pictoHold2, servDiv3, sliIdiv3, pictoHold3, servDiv4, sliIdiv4, pictoHold4, fdivCont, fdivCopy} from './createHolders'
+import {Logo, atag1, atag2, atag3, atag4, atag5, atag6, Seal, infoH1, infoH2, infoH3, infoP1, infoP2, infoP3, infoH4, servHA, servHB, servHC, servHD, servPA, servPB, servPC, servPD, pictoA, pictoB, pictoC, pictoD, footH, copyR} from './createCall';
 
 class AppendStuff{
     objectsTo(){
+        pic.makeAppend("innerHold", Logo);
+        pic.makeAppend("innerHold", ulhead);
+
+        ulhead.appendChild(li1);
+        ulhead.appendChild(li2);
         li1.appendChild(atag1);
         li2.appendChild(atag2);
         li3.appendChild(atag3);
         li4.appendChild(atag4);
 
-        pic.makeAppend("ulIdhead", li1);
-        pic.makeAppend("ulIdhead", li2);
         pic.makeAppend("ulIdnav", li3);
         pic.makeAppend("ulIdnav", li4);
         pic.makeAppend("fixedHead", infoH1);

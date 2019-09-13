@@ -55,9 +55,10 @@ class MakeSvg{
         return div;
     }
 
-    createUl(){
+    createUl(id, clazz1, clazz2){
         let ul = document.createElement("ul");
-        ul.setAttribute("id", "ulIdfoot");
+        ul.setAttribute("id", id);
+        ul.classList.add(clazz1, clazz2);
         return ul;
     }
 
